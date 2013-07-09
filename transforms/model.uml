@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_2NJiYOhqEeKBB-kCzVtx8w" name="model">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_2NUhgOhqEeKBB-kCzVtx8w" name="StateMachine0">
+    <region xmi:id="_2NYy8OhqEeKBB-kCzVtx8w" name="Region0">
+      <transition xmi:id="_60ruMOhqEeKBB-kCzVtx8w" name="Transition0" source="_28zdsOhqEeKBB-kCzVtx8w" target="_35CccOhqEeKBB-kCzVtx8w">
+        <effect xmi:type="uml:Activity" xmi:id="__ktHoOhqEeKBB-kCzVtx8w" name="DoSth"/>
+      </transition>
+      <transition xmi:id="_7otzMOhqEeKBB-kCzVtx8w" name="Transition1" guard="_CoqA0OhrEeKBB-kCzVtx8w" source="_35CccOhqEeKBB-kCzVtx8w" target="_4rmh0OhqEeKBB-kCzVtx8w">
+        <ownedRule xmi:id="_CoqA0OhrEeKBB-kCzVtx8w" name="A">
+          <specification xmi:type="uml:Expression" xmi:id="_Q8rgEOhrEeKBB-kCzVtx8w" name="exprA" symbol="A"/>
+        </ownedRule>
+      </transition>
+      <transition xmi:id="_8Rg4kOhqEeKBB-kCzVtx8w" name="Transition2" guard="_M7sW4OhrEeKBB-kCzVtx8w" source="_35CccOhqEeKBB-kCzVtx8w" target="_5NJIoOhqEeKBB-kCzVtx8w">
+        <ownedRule xmi:id="_M7sW4OhrEeKBB-kCzVtx8w" name="B">
+          <specification xmi:type="uml:Expression" xmi:id="_PBjQIOhrEeKBB-kCzVtx8w" name="exprB" symbol="B"/>
+        </ownedRule>
+      </transition>
+      <subvertex xmi:type="uml:State" xmi:id="_28zdsOhqEeKBB-kCzVtx8w" name="State0"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_35CccOhqEeKBB-kCzVtx8w" name="Junction0" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_4rmh0OhqEeKBB-kCzVtx8w" name="State1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_5NJIoOhqEeKBB-kCzVtx8w" name="State2"/>
+    </region>
+  </packagedElement>
+</uml:Model>

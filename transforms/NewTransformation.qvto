@@ -1,0 +1,78 @@
+modeltype UML uses uml('http://www.eclipse.org/uml2/4.0.0/UML');
+
+transformation NewTransformation(in statemachine : UML, out woj : UML);
+
+main() {
+
+	statemachine.objectsOfType(StateMachine).map copyStateMachine();
+
+}
+
+mapping StateMachine::copyStateMachine() : StateMachine {
+	name := self.name;
+	region := self.region.map copyRegion();
+}
+
+mapping Region::copyRegion() : Region {
+	name := self.name;
+	
+	subvertex := self.subvertex.map copySubVertex();
+	transition := self.transition.map copyTransition();
+}
+
+/*
+mapping Transition::copyTransition() : Transition {
+	name := self.name;
+	source := getTargetVertexByName(self.source.name);
+	target := getTargetVertexByName(self.target.name);
+}
+
+query getTargetVertexByName(name : String) : Vertex {
+	return woj.objectsOfType(StateMachine).region.subvertex->any( v : Vertex | v.name = name);
+}
+*/
+
+mapping Transition::copyTransition() : Transition  
+	when {self.target.oclIsTypeOf(Pseudostate) implies self.target.oclAsType(Pseudostate).kind != PseudostateKind::junction} {
+		
+	name := self.name;
+	
+	source := if self.source.oclIsTypeOf(Pseudostate) and self.source.oclAsType(Pseudostate).kind = PseudostateKind::junction then
+					self.source.incoming->any(true).source
+				else
+					self.source
+				endif;
+				
+	target := self.target;
+	
+	guard := self.guard;
+				
+	effect := if self.source.oclIsTypeOf(Pseudostate) and self.source.oclAsType(Pseudostate).kind = PseudostateKind::junction then
+				self.source.incoming->any(true).effect
+				else
+				self.effect
+				endif;
+				
+	trigger := self.trigger->union(	if self.source.oclIsTypeOf(Pseudostate) and self.source.oclAsType(Pseudostate).kind = PseudostateKind::junction then
+					self.source.incoming->any(true).trigger
+					else
+					Set{}
+					endif);
+				
+}
+
+mapping State::copyState() : State {
+	name := self.name;	
+}
+
+mapping Pseudostate::copyPseudostate() : Pseudostate 
+	when {self.kind != PseudostateKind::junction} {
+	
+	name := self.name;
+}
+
+
+mapping Vertex::copySubVertex() : Vertex 
+	disjuncts State::copyState, Pseudostate::copyPseudostate;
+	
+	

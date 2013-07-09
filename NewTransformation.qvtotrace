@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="copyStateMachine" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyStateMachine"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="StateMachine">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_2NUhgOhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="StateMachine">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_MOhvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="copyRegion" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyRegion"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Region">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_2NYy8OhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Region">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_MehvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="copyState" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyState"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="State">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_28zdsOhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="State">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_NuhvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="copyState" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyState"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="State">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_5NJIoOhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="State">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_NOhvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="copyState" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyState"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="State">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_4rmh0OhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="State">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_NehvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="copyTransition" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyTransition"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Transition">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_8Rg4kOhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Transition">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_M-hvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="copyTransition" package="NewTransformation" module="NewTransformation">
+      <runtimeMappingOperation href="platform:/resource/QVTEx/transforms/NewTransformation.qvtox#//copyTransition"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Transition">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/model.uml#_7otzMOhqEeKBB-kCzVtx8w"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Transition">
+        <value>
+          <modelElement href="platform:/resource/QVTEx/transforms/NewTransformation.uml#_u0v_MuhvEeKBB-kCzVtx8w"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+</trace:Trace>
